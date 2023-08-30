@@ -1,0 +1,45 @@
+Expresión regular 1:
+\bHola mundo\b
+
+Cadena: "Hola mundo" - Válida
+Cadena: "hola mundo" - No válida
+Cadena: "Java" - No válida
+Cadena: "test@unison.mx" - No válida
+Cadena: "ISI2022-1.csv" - No válida
+
+Expresión regular 2:
+\bHola mundo\b
+
+Cadena: "Hola mundo" - Válida
+Cadena: "hola mundo" - No válida
+Cadena: "Java" - No válida
+Cadena: "test@unison.mx" - No válida
+Cadena: "ISI2022-1.csv" - No válida
+
+Expresión regular 3:
+\b(?:Java|Python|Go|Pascal|Perl)\b
+
+Cadena: "Hola mundo" - No válida
+Cadena: "hola mundo" - No válida
+Cadena: "Java" - Válida
+Cadena: "test@unison.mx" - No válida
+Cadena: "ISI2022-1.csv" - No válida
+
+Expresión regular 4:
+^[A-Za-z0-9._%+-]+@(?:unison|uson)\\.mx$
+
+Cadena: "Hola mundo" - No válida
+Cadena: "hola mundo" - No válida
+Cadena: "Java" - No válida
+Cadena: "test@unison.mx" - No válida
+Cadena: "ISI2022-1.csv" - No válida
+
+Expresión regular 5:
+^ISI\d{4}-[12]\.(?:txt|csv)$
+
+Cadena: "Hola mundo" - No válida
+Cadena: "hola mundo" - No válida
+Cadena: "Java" - No válida
+Cadena: "test@unison.mx" - No válida
+Cadena: "ISI2022-1.csv" - Válida
+
